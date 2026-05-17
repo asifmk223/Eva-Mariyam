@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eva Mariyam - Contact Details</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Segoe UI',sans-serif;
+      background:linear-gradient(135deg,#f3f6ff,#eef7f3);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:15px;
+    }
+
+    .card{
+      width:100%;
+      max-width:380px;
+      background:#ffffff;
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:0 10px 35px rgba(0,0,0,0.12);
+    }
+
+    .top{
+      background:linear-gradient(135deg,#2563eb,#1d4ed8);
+      padding:25px 20px 75px;
+      text-align:center;
+      position:relative;
+    }
+
+    .school-name{
+      color:#ffffff;
+      font-size:18px;
+      font-weight:700;
+      line-height:1.4;
+      margin-bottom:10px;
+    }
+
+    .profile{
+      width:130px;
+      height:130px;
+      border-radius:50%;
+      object-fit:cover;
+      border:5px solid #fff;
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:-65px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .content{
+      padding:85px 22px 25px;
+      text-align:center;
+    }
+
+    h1{
+      font-size:28px;
+      color:#222;
+      margin-bottom:5px;
+    }
+
+    .subtitle{
+      color:#666;
+      font-size:15px;
+      margin-bottom:22px;
+      font-weight:500;
+    }
+
+    .info-box{
+      background:#f7f9fc;
+      border-radius:18px;
+      padding:16px;
+      margin-bottom:18px;
+      text-align:left;
+      box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .info{
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:14px;
+      padding-bottom:12px;
+      border-bottom:1px solid #e5e7eb;
+      font-size:15px;
+    }
+
+    .info:last-child{
+      margin-bottom:0;
+      border-bottom:none;
+      padding-bottom:0;
+    }
+
+    .label{
+      font-weight:700;
+      color:#333;
+      min-width:110px;
+    }
+
+    .value{
+      color:#555;
+      text-align:right;
+      flex:1;
+      font-weight:500;
+    }
+
+    .address{
+      line-height:1.6;
+    }
+
+    .buttons{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      margin-top:20px;
+    }
+
+    .btn{
+      text-decoration:none;
+      padding:14px;
+      border-radius:14px;
+      font-weight:600;
+      color:white;
+      font-size:16px;
+      transition:0.3s;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      opacity:0.95;
+    }
+
+    .whatsapp{
+      background:#25D366;
+    }
+
+    .call{
+      background:#2563eb;
+    }
+
+    .save{
+      background:#7c3aed;
+    }
+
+    @media(max-width:400px){
+
+      .school-name{
+        font-size:16px;
+      }
+
+      h1{
+        font-size:24px;
+      }
+
+      .info{
+        flex-direction:column;
+      }
+
+      .value{
+        text-align:left;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="top">
+
+      <div class="school-name">
+        St. THOMAS L P SCHOOL, PALAYOOR
+      </div>
+
+      <img src="evamariyam.jpg" alt="Eva Mariyam" class="profile">
+
+    </div>
+
+    <div class="content">
+
+      <h1>Eva Mariyam</h1>
+
+      <div class="subtitle">
+        LKG • Division A
+      </div>
+
+      <div class="info-box">
+
+        <div class="info">
+          <div class="label">Class</div>
+          <div class="value">LKG</div>
+        </div>
+
+        <div class="info">
+          <div class="label">Division</div>
+          <div class="value">A</div>
+        </div>
+
+        <div class="info">
+          <div class="label">Blood Group</div>
+          <div class="value">B +ve</div>
+        </div>
+
+        <div class="info">
+          <div class="label">Phone</div>
+          <div class="value">+91 8593091728</div>
+        </div>
+
+        <div class="info">
+          <div class="label">Address</div>
+
+          <div class="value address">
+            Ambalath Veettil,<br>
+            Chavakkad,<br>
+            Kerala - 680516
+          </div>
+        </div>
+
+      </div>
+
+      <div class="buttons">
+
+        <a href="https://wa.me/918593091728" class="btn whatsapp">
+          WhatsApp
+        </a>
+
+        <a href="tel:+918593091728" class="btn call">
+          Call Now
+        </a>
+
+        <a
+          href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Eva Mariyam%0ATEL:+918593091728%0AADR:Ambalath Veettil, Chavakkad, Kerala 680516%0AEND:VCARD"
+          download="Eva_Mariyam_Contact.vcf"
+          class="btn save">
+
+          Save Contact
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
